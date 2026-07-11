@@ -1,0 +1,316 @@
+/* ==========================
+   SELLER ELSA | BEAUTY GLOW
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(to bottom,#ffe4ef,#fff5f8);
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff4fa0;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff4fa0;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+    background:linear-gradient(135deg,#ffd8e8,#fff5f8);
+}
+
+.hero-text{
+    width:50%;
+}
+
+.badge{
+    display:inline-block;
+    background:#ff4fa0;
+    color:white;
+    padding:10px 22px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#ff4fa0;
+}
+
+.hero p{
+    font-size:20px;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.hero h2{
+    color:#ff4fa0;
+    margin-bottom:30px;
+}
+
+.hero button{
+    background:#000;
+    color:#fff;
+    border:none;
+    padding:16px 35px;
+    border-radius:35px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    background:#ff4fa0;
+}
+
+.hero-image{
+    width:45%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:90%;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.klik{
+    margin-top:20px;
+    font-weight:bold;
+}
+
+/* JUDUL */
+
+.judul{
+    text-align:center;
+    font-size:40px;
+    color:#ff4fa0;
+    margin:60px 0 40px;
+}
+
+/* PRODUK */
+
+.produk-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:0 8% 60px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:#ff4fa0;
+    margin:15px;
+}
+
+.card p{
+    padding:0 15px;
+    color:#666;
+}
+
+.card del{
+    color:gray;
+}
+
+.card h4{
+    color:#e91e63;
+    font-size:24px;
+    margin:15px 0;
+}
+
+.card button{
+    background:#ff4fa0;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:30px;
+    margin-bottom:20px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#000;
+}
+
+/* TESTIMONI */
+
+#testimoni{
+    background:#fff;
+    padding:70px 8%;
+    text-align:center;
+}
+
+.review{
+    background:#ffe4ef;
+    padding:30px;
+    border-radius:20px;
+    max-width:700px;
+    margin:auto;
+}
+
+.review h2{
+    color:#ff4fa0;
+    margin-bottom:15px;
+}
+
+/* BLOG */
+
+#blog{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.blog-box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+/* KONTAK */
+
+#kontak{
+    background:#ff4fa0;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+#kontak h2{
+    margin-bottom:20px;
+}
+
+#kontak p{
+    font-size:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* TOMBOL ATAS */
+
+#topBtn{
+    display:none;
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#ff4fa0;
+    color:white;
+    border:none;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:22px;
+}
+
+#topBtn:hover{
+    background:#000;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-image{
+    width:100%;
+    margin-top:40px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
